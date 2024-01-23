@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order your food!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <div class="burger burger2" id="burger">
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+            </div>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/service.html">Services</a></li>
+            <li><a href="/products.html">Our products</a></li>
+            <li><a href="/contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+    <div class="hamnav" id="hamnav">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/service.html">Services</a></li>
+            <li><a href="/products.html">Our products</a></li>
+            <li><a href="/contact.html">Contact us</a></li>
+        </ul>
+    </div>
+    <div class="ordered" id="ordered">
+        <div class="img"><img src="tick.jpg" alt="right tick"></div>
+        <div class="done">
+            <h1>Your order has been placed with:</h1>
+            <p>OrderID: <span id="orderid"></span></p>
+            <p>Name: <span  id="na"></span></p>
+            <p>Phone number: <span id="ph"> </span></p>
+            <p>Address: <span id="ad"> </span></p>
+        </div>
+    </div>
+    <div class="cbox" id="cbox">
+        <div class="input">
+                <h1>Order your food.</h1>
+                <input type="text" placeholder="Your name here." class="inputarea" value="" id="name"><br>
+                <input type="email" placeholder="Your e-mail here." class="inputarea" value="" id="email" required><br>
+                <input type="number" placeholder="Your phone number here." class="inputarea" value="" id="phone" required><br>
+                <input type="text" placeholder="Food name to order." class="inputarea" id="foodname" value="" required><br>
+                <input type="text" placeholder="Your address here." class="inputarea" id="add" value="" required><br>
+                <input type="number" placeholder="Quantity" class="inputarea" value="1" required><br>
+                <button class="cbtn" id="cbtnn">Order &rarr;</button>
+        </div>
+     </div>
+     <script>
+        function getValue(id){
+          let bb = document.getElementById(id).value 
+          return bb  
+        }
+
+        function showValue(id, value){
+          let ids = document.getElementById(id)
+          ids.innerHTML = value 
+        }   
+
+        let cbtn = document.getElementById('cbtnn')
+        let ordered = document.getElementById('ordered')
+        let cbox = document.getElementById('cbox')
+
+        cbtn.addEventListener('click', ()=>{
+             cbox.style.display = 'none'
+             ordered.style.display = 'block'
+           
+             let characters = "1234567890QWERTYUIOPLKJHGFDSAZXCVBNMqazwsxedcrfvtgbyhnujmikolp"
+             let length = 15
+             let password = ""
+             for (let i=0; i<length; i++){
+               var numbers = Math.floor(Math.random() * characters.length)
+               password += characters.substring(numbers, numbers+1)
+               document.getElementById("orderid").innerText = password
+             }
+           
+             showValue('ad', getValue('add'))
+             showValue('ph', getValue('phone'))
+             showValue('na', getValue('name'))
+           })
+     </script>
+</body>
+</html>
