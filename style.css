@@ -1,0 +1,493 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.hamnav{
+    background-color: #333;
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    display: none;
+}
+
+.hamnav li{
+    list-style: none;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.hamnav ul{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    flex-direction: column;
+    padding-left: 17px;
+    padding-top: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.burger{
+    display: flex;
+    flex-direction: column;
+}
+
+.burger2{
+    display: none;
+}
+
+.hamburger{
+    background: black;
+    width: 40px;
+    height: 3px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.hamburger:nth-child(1){
+    margin-top: 20px;
+}
+
+.navbar li{
+    list-style: none;
+    margin: 0 30px;
+    position: relative;
+}
+
+.navbar ul{
+    display: flex;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.buttons{
+    background: white;
+    width: 100px;
+    height: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-right: 17px;
+}
+
+#e{
+    margin-bottom: 50px;
+}
+
+.reviews h1{
+    margin-bottom: 50px;
+}
+
+.review{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.hbox{
+    margin-bottom: 50px;
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    border: 2px solid #777;
+    border-radius: .400rem;
+}
+
+.hbox h{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    width: 100%;
+}
+
+.class{
+    display: flex;
+}
+
+.hname{
+    position: relative;
+    top: 10px;
+}
+
+.hreview p{
+    font-family: cursive;
+}
+
+.navbar a{
+    position: relative;
+    top: 50%;
+    transform: translateX(-50%); 
+    color: white;
+    text-decoration: none;
+    height:  60px;
+}
+
+.navbar{
+    background-color: grey;
+    height: 60px;
+}
+
+.lklll{
+    position: relative;
+    top: 440px;
+    margin-bottom: 50px;
+}
+
+.lklll h1{
+    color: black;
+    text-align: center;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 400px;
+    z-index: -10;
+    background: url(food.jpg) repeat center center fixed;
+    position: absolute;
+    top: 61px;
+}
+
+.home p{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/* service.html */
+.service h1{
+    color: black;
+    font-weight: bold;
+}
+
+.service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 35px;
+}
+
+.servicebox{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 35px;
+}
+
+.service p{
+    color: black;
+}
+
+.boxes{
+    background-color: skyblue;
+    width: 300px;
+    height: 350px;
+    border-radius: .200rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.para{
+    margin-top: 60px;
+    display: flex;
+    text-align: center;
+    height: 100%;
+}
+
+.head{
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.orderbtn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.orderbtn a{
+    color: black;
+}
+
+.orderbtn button{
+    background: rgb(55, 55, );
+    box-shadow: 0 0 10px #777;
+    border-radius: 5px;
+    height: 30px;
+    width: 150px;
+}
+
+h1, p{
+    color: black;
+}
+
+.orderbtn button:hover{
+    background: rgb(55, 55, 200);
+    transition: 1s;
+}
+
+.orderbtn button:focus{
+    background: #008830;
+}
+
+/* about page */
+.intro{
+    padding: 20px;
+}
+
+.intro h1, p{
+    color: black;
+}
+
+/* products page */
+#grey{
+    color: grey;
+    margin-left: 5px;
+}
+
+.wholebox{
+    position: absolute;
+    top: 60px;
+    background-color: #efefef;
+    width: 100%;
+}
+
+.productbox li{
+    list-style: decimal;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.productbox h1{
+    display: flex;
+   justify-content: center;
+   text-align: center;
+}
+
+#lastli{
+    margin-bottom: 10px;
+}
+
+.productbox{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.mainbox{
+    margin-top: 50px;
+}
+
+.mainbox h1{
+    display: flex;
+    justify-content: center;
+}
+
+.pbox{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.foodbox{
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 0 20px 0 #999;
+    background: #fff;
+    border-radius: .200rem;
+    padding: 10px;
+}
+
+.ppara{
+    text-align: center;
+    margin-top: 12px;
+}
+
+.phead{
+    font-size: 17px;
+}
+
+.productbox a{
+    color: black;
+}
+
+.pphotos img{
+    margin-top: 15px;
+    width: 100%;
+    height: 150px;
+    border-radius: .200rem;
+}
+
+/* contact page */
+.cbox{
+    background: #efefef;
+    width: 100%;
+    height: calc(100% - 60px);
+    z-index: -10;
+    position: absolute;
+}
+
+.input{
+    width: 500px;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    box-shadow: 0 0 20px 0 #999;
+}
+
+form{
+    margin: 35px;
+}
+
+.inputarea{
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    border: 1px solid #777;
+    outline: none;
+}
+
+#textarea{
+    height: 150px;
+    padding-top: 10px;
+}
+
+.cbtn{
+    width: 100px;
+    height: 40px;
+    background-color: #008830;
+    margin-top: 30px;
+}
+
+.inputarea:hover{
+    box-shadow: 0 0 3px 0 blue;
+}
+
+.cbtn:hover{
+   box-shadow: 0 0 5px blue;
+}
+
+/* media quries. */
+
+@media only screen and (max-width: 820px){
+    .foodbox{
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 620px){
+    .pbox{
+        flex-direction: column;
+        align-items: center;
+    }
+    .foodbox{
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .inputarea{
+        width: 290px;
+    }
+    .input{
+        width: 390px;
+    }
+}
+
+@media only screen and (max-width: 560px){
+    .navbar li{
+        display: none;
+    }
+    .burger2{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 909px){
+    .servicebox{
+        display: flex;
+        flex-direction: column;  
+        align-items: center;
+    }
+    .review{
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+    .boxes{
+        margin-bottom: 30px;
+    }
+    .orderbtn{
+        margin-top: 0;
+    }
+    .orderbtn button{
+        margin-bottom: 20px;
+    }
+}
+
+/* order page */
+
+.img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 70px;
+}
+
+.img img{
+    width: 200px;
+    height: 200px;
+}
+
+.done{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.done span{
+    font-weight: bold;
+}
+
+.done h1{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.done p{
+    margin-bottom: 5px;
+}
+
+.ordered{
+    display: none;
+}
